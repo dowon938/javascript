@@ -185,6 +185,7 @@ const calculate = (command, a, b,) => {
             break;    
         default:
             console.log('wrong command');
+            throw Error('unkown command');
             break;
     }
 };
