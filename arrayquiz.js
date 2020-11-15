@@ -103,3 +103,39 @@ console.log(result);
     .join();
     console.log(result);
 }
+
+let participant = ['sendo','eden', 'kiki', 'eden'];
+let completion = ['kiki','eden','eden'];
+
+let answer= '';
+
+// for (let i=0; i<participant.length; i++){
+//     if (completion.indexOf(participant[i])===-1) {
+//         answer = participant[i];
+//     }
+// }
+
+for (let i=0; i<participant.length; i++){
+    // if (completion.indexOf(firstname)!== -1) {
+    //     participant.splice(participant.indexOf(participant[0]),1);
+    //     completion.splice(completion.indexOf(participant[0]),1);
+    // } else 
+    if (completion.indexOf(participant[0])=== -1) {
+        answer = participant[0].toString();
+        break;
+        // participant.splice(participant.indexOf(participant[1]),1);
+        // completion.splice(completion.indexOf(participant[1]),1);
+    }
+    participant.splice(participant.indexOf(participant[0]),1);
+    completion.splice(completion.indexOf(participant[0]),1);
+}
+
+// while (completion.indexOf(firstname)=== -1) {
+//     participant.splice(participant.indexOf(participant[0]),1);
+//     completion.splice(completion.indexOf(participant[0]),1);
+// }
+
+console.log(answer);
+participant.toString;
+console.log(participant.toString());
+console.log(completion.indexOf(participant[0]));
