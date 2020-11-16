@@ -104,8 +104,8 @@ console.log(result);
     console.log(result);
 }
 
-let participant = ['sendo','eden', 'kiki', 'eden'];
-let completion = ['kiki','eden','eden'];
+let participant = ["marina", "josipa", "nikola", "vinko", "filipa"];
+let completion = ["josipa", "filipa", "marina", "nikola"];
 
 let answer= '';
 
@@ -115,27 +115,35 @@ let answer= '';
 //     }
 // }
 
-for (let i=0; i<participant.length; i++){
-    // if (completion.indexOf(firstname)!== -1) {
-    //     participant.splice(participant.indexOf(participant[0]),1);
-    //     completion.splice(completion.indexOf(participant[0]),1);
-    // } else 
-    if (completion.indexOf(participant[0])=== -1) {
-        answer = participant[0].toString();
-        break;
-        // participant.splice(participant.indexOf(participant[1]),1);
-        // completion.splice(completion.indexOf(participant[1]),1);
-    }
-    participant.splice(participant.indexOf(participant[0]),1);
-    completion.splice(completion.indexOf(participant[0]),1);
-}
-
-// while (completion.indexOf(firstname)=== -1) {
+// for (let i=0; i<participant.length; i++){
+//     // if (completion.indexOf(firstname)!== -1) {
+//     //     participant.splice(participant.indexOf(participant[0]),1);
+//     //     completion.splice(completion.indexOf(participant[0]),1);
+//     // } else 
+//     if (completion.indexOf(participant[0])=== -1) {
+//         answer = participant[0].toString();
+//         break;
+//         // participant.splice(participant.indexOf(participant[1]),1);
+//         // completion.splice(completion.indexOf(participant[1]),1);
+//     }
 //     participant.splice(participant.indexOf(participant[0]),1);
 //     completion.splice(completion.indexOf(participant[0]),1);
 // }
 
-console.log(answer);
-participant.toString;
-console.log(participant.toString());
-console.log(completion.indexOf(participant[0]));
+// for (let i=0; i<participant.length; i++){
+//     let firstname = participant[0];
+//     participant.splice(participant.indexOf(firstname),1);
+//     completion.splice(completion.indexOf(firstname),1);
+// }
+let time = completion.length;
+for (let i=0; i<time; i++){
+    let firstname = completion[0];
+    participant.splice(participant.indexOf(firstname),1);
+    completion.splice(completion.indexOf(firstname),1);
+}
+answer = participant
+console.log(answer)
+
+let c= 'qwer'
+console.log(answer = c.slice(c.length/2-1,c.length/2+1));
+console.log(c.length
