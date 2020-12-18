@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 //JSON
 //JavaScript Object Notation
 
@@ -7,29 +7,29 @@
 let json = JSON.stringify(true);
 console.log(json);
 
-json = JSON.stringify(['apple', 'banana']);
+json = JSON.stringify(["apple", "banana"]);
 console.log(json);
 
 const rabbit = {
-    name: 'tori',
-    color: 'white',
-    size: null,
-    birthDate: new Date(),
-    jump: () => {
-        console.log(`${this.name} can jump!`);
-    },
+  name: "tori",
+  color: "white",
+  size: null,
+  birthDate: new Date(),
+  jump: () => {
+    console.log(`${this.name} can jump!`);
+  },
 };
 console.log(rabbit);
 
 json = JSON.stringify(rabbit);
 console.log(json);
 
-json = JSON.stringify(rabbit,['name','color']);
+json = JSON.stringify(rabbit, ["name", "color"]);
 console.log(json);
 
-json = JSON.stringify(rabbit,(key,value) => {
-    console.log(`key: ${key} value: ${value}`);
-    return key === 'name' ? 'ellie' : value;
+json = JSON.stringify(rabbit, (key, value) => {
+  console.log(`key: ${key} value: ${value}`);
+  return key === "name" ? "ellie" : value;
 });
 console.log(json);
 
@@ -37,9 +37,9 @@ console.log(json);
 // parse(json)
 
 json = JSON.stringify(rabbit);
-const obj = JSON.parse(json, (key,value) => {
-    console.log(`key: ${key} value: ${value}`);
-    return key === 'birthDate' ? new Date(value) : value;
+const obj = JSON.parse(json, (key, value) => {
+  console.log(`key: ${key} value: ${value}`);
+  return key === "birthDate" ? new Date(value) : value;
 });
 console.log(obj);
 rabbit.jump();
@@ -48,5 +48,5 @@ rabbit.jump();
 console.log(rabbit.birthDate.getDate());
 console.log(obj.birthDate.getDate());
 
-const answer = [1,2,3,1,4,5,3];
-console.log(answer.filter((number,index)=>answer.indexOf[number]===index));
+const answer = [1, 2, 3, 1, 4, 5, 3];
+console.log(answer.filter((number, index) => answer.indexOf[number] === index));
